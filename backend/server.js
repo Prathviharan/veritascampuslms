@@ -11,7 +11,7 @@ const notificationRouter = require("./routes/notification.router");
 const announcementRouter = require("./routes/announcement.router");
 const studentSupportRoutes = require("./routes/student/supportRoute");
 
-//const supportRoutes = require("./routes/Student/supportRoute");
+const supportRoutes = require("./routes/Student/supportRoute");
 const adminSupportRoutes = require("./routes/adminsupportroutes");
 const adminReportRoutes = require("./routes/adminReportRoute");
 const courseStatsRoutes = require("./routes/adminCourseStats");
@@ -113,4 +113,5 @@ app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
+
 });
