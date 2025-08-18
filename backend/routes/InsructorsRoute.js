@@ -6,7 +6,7 @@ const {
   getInstructorById,
   updateInstructor,
   deleteInstructor
-} = require('../controllers/admin/instructorController');
+} = require('../controllers/admin/InstructorController');
 
 // Create instructor
 router.post('/', createInstructor);
