@@ -8,10 +8,9 @@ const fileUpload = require("express-fileupload");
 
 
 const notificationRouter = require("./routes/notification.router");
-const announcementRouter = require("./routes/announcement.router");
-const studentSupportRoutes = require("./routes/student/supportRoute");
+const announcementRouter = require("./routes/announcement.router")
 
-const studentSupportRoutes = require("./routes/Student/supportRoute");
+const studentSupportRoutes = require("./routes/Student/supportRoute")
 const adminSupportRoutes = require("./routes/adminsupportroutes");
 const adminReportRoutes = require("./routes/adminReportRoute");
 const courseStatsRoutes = require("./routes/adminCourseStats");
@@ -115,4 +114,5 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
 
 });
+
 
