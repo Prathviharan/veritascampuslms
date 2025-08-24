@@ -1,0 +1,68 @@
+/* AdminSupportDashboard.css */
+
+.admin-support-card {
+  transition: all 0.3s ease;
+}
+
+.admin-support-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.admin-reply {
+  background-color: #f8f9fa;
+  border-left: 3px solid #28a745;
+}
+
+.status-badge {
+  font-size: 0.8rem;
+  padding: 0.4rem 0.6rem;
+}
+
+.issue-text {
+  max-height: 100px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.submit-btn {
+  background-color: #8BC34A;
+  border-color: #8BC34A;
+}
+
+.submit-btn:hover, .submit-btn:focus {
+  background-color: #7CB342;
+  border-color: #7CB342;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .filter-buttons {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .admin-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}
