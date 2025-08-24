@@ -1,0 +1,45 @@
+/* sidebar.css */
+
+/* NavLink styling */
+.inactive-link {
+  color: black;
+  text-decoration: none;
+}
+
+.active-link {
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #45b249;
+  color: black;
+  padding: 20px;
+  height: 100%;
+}
+
+.logo {
+  color: white;
+  margin: 10px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 10px 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.nav-list li ul {
+  margin-top: 5px;
+  padding-left: 20px;
+  font-size: 0.9em;
+}
+

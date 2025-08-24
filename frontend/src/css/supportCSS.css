@@ -1,0 +1,261 @@
+/* General Container */
+.admin-support-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f7f9fc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Section */
+.body {
+  flex-grow: 1;
+  padding: 30px 60px;
+  background-color: #fff;
+}
+
+/* Page Titles */
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+/* Search + Export Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.asearch-input {
+  width: 400px;
+  padding: 10px 15px;
+  border: 2px solid #3e9355;
+  border-radius: 20px;
+  font-size: 15px;
+  outline: none;
+}
+
+.abtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #95C436;
+  border: 1px solid #3E9355;
+  border-radius: 6px;
+  color: white;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.abtn:hover {
+  background-color: #82af2f;
+}
+
+/* Section Spacing */
+.section1,
+.section2 {
+  margin-top: 30px;
+}
+
+/* Tables */
+.atable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.thead {
+  background-color: #45b249;
+  color: white;
+  text-align: center;
+}
+
+.atable th,
+.atable td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* View Button */
+.v-btn {
+  width: 60px;
+  height: 30px;
+  font-size: 14px;
+  background-color: #95C436;
+  color: white;
+  border: 1px solid #3E9355;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+/* Select Dropdown */
+.select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 15px;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.select:hover {
+  border-color: #4CAF50;
+}
+
+.select:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Status Badge */
+.status-label {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 6px;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.status-label.pending {
+  background-color: #ffe0e0;
+  color: #d60000;
+}
+
+.status-label.in-progress {
+  background-color: #fff4cc;
+  color: #b38f00;
+}
+
+.status-label.resolved {
+  background-color: #d5fdd5;
+  color: #1f7a1f;
+}
+
+/* ---------- SINGLE VIEW SUPPORT ---------- */
+
+.view-container {
+  flex-grow: 1;
+  padding: 40px 60px;
+  background-color: #ffffff;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.view-box {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.view-box p {
+  margin: 12px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.view-box strong {
+  color: #1e2d3b;
+  display: inline-block;
+  width: 160px;
+}
+
+/* Attached Photo */
+.attachment-image,
+.view-box img {
+  max-width: 300px;
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Reply Section */
+.reply-section {
+  margin-top: 40px;
+}
+
+.reply-section h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.reply-textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  margin-bottom: 15px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Container for Reply */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* Reply / Back Buttons */
+.b-btn,
+.s-btn {
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  background-color: #95C436;
+  color: white;
+  border: 1px solid #3E9355;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.b-btn:hover,
+.s-btn:hover {
+  background-color: #7fb028;
+}
+
+/* Admin Reply Display */
+.admin-reply-display {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #eafaf0;
+  border: 1px solid #b4e1c4;
+  border-radius: 10px;
+}
+
+.admin-reply-display h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.admin-reply-display p {
+  margin: 8px 0;
+}

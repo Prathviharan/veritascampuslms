@@ -1,0 +1,76 @@
+.course-details-container {
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.course-details-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #222;
+  
+}
+
+.course-details-container p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.section {
+  margin-top: 30px;
+}
+
+.section h5 {
+  font-size: 20px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Layout for two rows with two columns each */
+.course-details-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.coursed-row {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.coursed-column {
+  flex: 1 1 300px;
+  min-width: 250px;
+}
+
+.btn-back:hover {
+  background-color: #7cb342;
+}
+.btn-edit {
+  text-decoration: none; /* Remove underline */
+  font-size: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #007bff; /* Optional: adjust icon color */
+  background: none;
+  border: none;
+}
+
+.btn-edit:hover {
+  color: #0056b3;
+  text-decoration: none;
+}

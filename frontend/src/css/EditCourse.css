@@ -1,0 +1,103 @@
+.edit-course-page {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.edit-course-page h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.edit-course-page label {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.edit-course-page input,
+.edit-course-page textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+.instructor-field {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.instructor-field input {
+  flex: 1;
+}
+
+.instructor-field button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.instructor-field button:hover {
+  background-color: #d32f2f;
+}
+
+.btn-add-instructor {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.btn-add-instructor:hover {
+  background-color: #388e3c;
+}
+
+.form-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-buttons button:first-child {
+  background-color: #4caf50;
+  color: white;
+}
+
+.form-buttons button:first-child:hover {
+  background-color: #388e3c;
+}
+
+.form-buttons button:last-child {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.form-buttons button:last-child:hover {
+  background-color: #bdbdbd;
+}

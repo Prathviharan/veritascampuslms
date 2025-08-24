@@ -1,0 +1,289 @@
+/* Hero Section */
+.hero-section {
+    background-image: url('../assets/whowearebanner.png'); /* Adjust path */
+    background-size: cover;
+    background-position: center;
+    height: 670px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 0 70px;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Slightly lighter than before */
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+  }
+  
+  .hero-content h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* Section Title */
+  .section-title {
+    text-align: center;
+    color: #4CAF50;
+    margin: 50px 0 30px;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: none;
+  }
+  
+  .mission-vision-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    color: #6B9D2F;
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.mission-vision-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.mission-box, .vision-box {
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+    gap: 20px;
+}
+
+.icon-container {
+    flex-shrink: 0;
+    width: 90px;
+}
+
+.icon-container img {
+    width: 90px;
+    height: 90px;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.content p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+ /* History Section */
+.history-section {
+    background-color: #fff;
+    padding: 50px 15px;
+  }
+  
+  .history-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .history-box {
+    text-align: center;
+    flex: 1 1 240px;
+  }
+  
+  .history-icon-container {
+   
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .history-icon {
+    font-size: 42px;
+    color: #000;
+  }
+  
+  .history-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .history-desc {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  
+  /* Section Titles */
+.section-title {
+    text-align: center;
+    color: #7AA62E;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  /* Mission & Vision Section */
+  .mission-vision-section {
+    background-color: #fff;
+    padding: 50px 15px;
+  }
+  
+  .mission-vision-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .mv-box {
+    flex: 1 1 400px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    text-align: left;
+  }
+  
+  .mv-icon {
+    font-size: 48px;
+    color: #000;
+    flex-shrink: 0;
+  }
+  
+  .mv-text {
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  /* Leaders Section */
+.leaders-section {
+    background-color: #fff;
+    padding: 60px 20px;
+  }
+  
+  .leaders-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .leader-message {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: #fafafa;
+  }
+  
+  .message-content p {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .leader-info {
+    text-align: right;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .leader-name {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  /* Why Choose Section */
+   
+  
+  .benefits-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .benefit-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #6a9d27;
+}
+
+.icon-box i {
+  font-size: 40px;
+  color: #000;
+}
+
+.mission-vision-section p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.company-history-section {
+  background-color: #f9f9f9;
+}
+
+.history-icon {
+  font-size: 40px;
+  color: #4CAF50;
+}
+
+  
+  .benefit-icon {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #4CAF50;
+  }
+  
+  .benefit-text {
+    font-size: 16px;
+  }
+  
+  /* Responsive Tweak */
+  @media (max-width: 768px) {
+    .mission-vision-container, .history-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .hero-content h2 {
+      font-size: 32px;
+    }
+  }
+  

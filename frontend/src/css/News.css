@@ -1,0 +1,159 @@
+.news-page {
+    padding: 40px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .news-header {
+    position: relative;
+    background-image: url('../assets/news-fleet.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  .news-header h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+  
+  .news-header p {
+    font-size: 16px;
+    color: #000; 
+    line-height: 1.5;
+    text-align: left; 
+    width: 80%;
+  }
+
+  .news-header + p {
+    font-size: 16px;
+    color: black;
+    line-height: 1.5;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .section-title {
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 10px; 
+    text-align: center; 
+    padding: 0 20px;
+    width: 80%; 
+    margin-bottom: 20px;
+  }
+  
+  .search-filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search-filter input,
+  .search-filter select {
+    padding: 10px;
+    font-size: 14px;
+    width: 200px;
+  }
+  
+  .news-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .news-card {
+    width: calc(50% - 10px);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f8f8f8;
+  }
+  
+  .news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .news-info {
+    padding: 15px;
+  }
+  
+  .news-info h3 {
+    margin: 0 0 5px;
+  }
+  
+  .news-info p {
+    color: gray;
+    font-size: 14px;
+    margin: 0 0 10px;
+  }
+  
+  .news-info button {
+    padding: 5px 10px;
+    background: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 500px;
+    margin-top: -50px;
+  }
+  
+  .pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .pagination span {
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  .pagination .active {
+    color: orange;
+    font-weight: bold;
+  }
+
+  /* Support Desk Button Styles */
+  .support-service .submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    min-width: 150px;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: #8BC34A !important;
+    border-color: #8BC34A !important;
+    color: white !important;
+    margin-top: 15px;
+  }
+
+  .support-service .submit-btn:hover,
+  .support-service .submit-btn:focus,
+  .support-service .submit-btn:active {
+    background-color: #3E9355 !important;
+    border-color: #3E9355 !important;
+    box-shadow: 0 4px 8px rgba(62, 147, 85, 0.2);
+    transform: translateY(-1px);
+  }
+
+  .support-service .submit-btn:disabled {
+    background-color: #cccccc !important;
+    border-color: #cccccc !important;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }

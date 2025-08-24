@@ -1,0 +1,115 @@
+/* Container */
+.admin-Report-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Reports page section */
+.reports-page {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Page title */
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Filter bar section */
+.filter-bar {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.asearch-input{
+  margin-top: 10px;
+}
+/* Input, select, and button styles */
+.asearch-input,
+.select,
+.abtn,
+.dbtn {
+  padding: 12px 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Button specific styles */
+.dbtn {
+  background-color: #95C436;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #3E9355;
+  transition: 0.3s ease;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dbtn:hover {
+  background-color: #7fb028;
+}
+
+/* Chart section */
+.chart-section {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+/* Table section common styles */
+.table-section {
+  margin-top: 40px;
+}
+
+.table-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Table styles */
+.rtable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background-color: white;
+}
+
+.rtable thead {
+  background-color: #3E9355;
+  color: white;
+  text-align: left;
+}
+
+.rtable th,
+.rtable td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.rtable tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.rtable tbody tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+}

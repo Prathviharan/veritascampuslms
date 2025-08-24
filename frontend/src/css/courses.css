@@ -1,0 +1,83 @@
+.courses-page {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.courses-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.courses-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.courses-table th,
+.courses-table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.course-link {
+  color: #078f62;
+  text-decoration: none;
+}
+
+.course-link:hover {
+  text-decoration: underline;
+}
+
+.btn-edit,
+.btn-delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.btn-edit:hover {
+  color: #007bff;
+}
+
+.btn-delete:hover {
+  color: red;
+}
+
+.btn-add-new {
+  background-color: #25d158;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.btn-add-new:hover {
+  background-color: #218838;
+  transform: scale(1.03);
+}
+
+.btn-add-new:active {
+  background-color: #1e7e34;
+  transform: scale(1);
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
