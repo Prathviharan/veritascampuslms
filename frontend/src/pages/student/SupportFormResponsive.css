@@ -1,0 +1,202 @@
+/* Responsive Media Queries for SupportForm */
+
+/* Extra Large Devices (1200px and up) */
+@media (min-width: 1200px) {
+  .support-form-container {
+    max-width: 1000px;
+    padding: 40px;
+  }
+  
+  .support-form-title {
+    font-size: 2.2rem;
+  }
+  
+  .btn-submit-request:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(139, 195, 74, 0.4);
+  }
+}
+
+/* Large Devices (992px to 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .support-form-container {
+    max-width: 900px;
+    padding: 35px;
+  }
+  
+  .support-form-title {
+    font-size: 2rem;
+  }
+}
+
+/* Medium Devices (768px to 991px) */
+@media (max-width: 991px) {
+  .support-form-container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+  }
+  
+  .support-form-title {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+  
+  .dropzone-area {
+    min-height: 180px;
+  }
+  
+  .form-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Devices (576px to 767px) */
+@media (max-width: 767px) {
+  .support-form-container {
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .support-form-title {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    font-size: 0.9rem;
+  }
+  
+  .input-field {
+    padding: 8px 12px;
+  }
+  
+  .form-floating > .input-field {
+    height: calc(3.2rem + 2px);
+  }
+  
+  .dropzone-area {
+    min-height: 150px;
+    padding: 15px;
+  }
+  
+  .form-text {
+    font-size: 0.8rem;
+  }
+  
+  .submit-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  
+  .submit-button-container {
+    justify-content: center;
+  }
+}
+
+/* Extra Small Devices (under 576px) */
+@media (max-width: 575px) {
+  .support-form-container {
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .support-form-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+  
+  .form-label {
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+  }
+  
+  .input-field {
+    padding: 7px 10px;
+    font-size: 0.9rem;
+  }
+  
+  .form-floating > .input-field {
+    height: calc(3rem + 2px);
+  }
+  
+  .form-floating > .floating-label {
+    padding: 0.8rem 0.75rem;
+    font-size: 0.85rem;
+  }
+  
+  .form-floating > textarea.input-field {
+    min-height: 100px;
+  }
+  
+  .dropzone-area {
+    min-height: 120px;
+    padding: 10px;
+  }
+  
+  .dropzone-area p {
+    font-size: 0.85rem;
+  }
+  
+  .form-text {
+    font-size: 0.75rem;
+  }
+  
+  .submit-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  
+  .required-fields-note {
+    font-size: 0.8rem;
+  }
+}
+
+/* For very small screens (under 400px) */
+@media (max-width: 399px) {
+  .support-form-container {
+    padding: 12px;
+  }
+  
+  .support-form-title {
+    font-size: 1.2rem;
+  }
+  
+  .input-field {
+    padding: 6px 8px;
+    font-size: 0.85rem;
+  }
+  
+  .form-label {
+    font-size: 0.8rem;
+  }
+  
+  .dropzone-area {
+    min-height: 100px;
+  }
+  
+  .form-floating > .input-field {
+    height: calc(2.8rem + 2px);
+  }
+  
+  .form-floating > .floating-label {
+    padding: 0.7rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .submit-btn {
+    padding: 7px 14px;
+    font-size: 0.85rem;
+  }
+  
+  .loading-text {
+    font-size: 0.9rem;
+  }
+  
+  .loading-spinner {
+    width: 3rem;
+    height: 3rem;
+  }
+}

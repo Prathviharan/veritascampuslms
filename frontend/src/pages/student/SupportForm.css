@@ -1,0 +1,249 @@
+/* SupportForm.css */
+
+.support-form-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.support-form-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #343a40;
+}
+
+.input-field {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Title field styling */
+.input-field[name="title"] {
+  font-size: 1rem;
+  font-weight: 500;
+  border-left: 4px solid #8BC34A;
+}
+
+.input-field[name="title"]:focus {
+  border-color: #8BC34A;
+  box-shadow: 0 0 0 0.2rem rgba(139, 195, 74, 0.25);
+}
+
+.input-field:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Placeholder styling */
+.input-field::placeholder {
+  color: #adb5bd;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6c757d;
+  transform: translateY(-2px);
+}
+
+.form-label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #495057;
+}
+
+/* Floating label styles */
+.form-floating {
+  position: relative;
+}
+
+.form-floating > .input-field {
+  height: calc(3.5rem + 2px);
+  padding: 1rem 0.75rem;
+}
+
+.form-floating > textarea.input-field {
+  height: auto;
+  min-height: 120px;
+  padding: 1.5rem 0.75rem 0.5rem;
+}
+
+.form-floating > .input-field::placeholder {
+  color: transparent;
+}
+
+.form-floating > .floating-label {
+  position: absolute;
+  top: 0;
+  left: 0; 
+  height: 100%;
+  padding: 1rem 0.75rem;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity .1s ease-in-out, transform .1s ease-in-out;
+  color: #6c757d;
+  font-weight: 400;
+}
+
+.form-floating > .input-field:focus ~ .floating-label,
+.form-floating > .input-field:not(:placeholder-shown) ~ .floating-label {
+  opacity: 0.8;
+  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+  color: #007bff;
+  font-weight: 500;
+  padding-top: 0.25rem;
+}
+
+/* Special handling for textarea */
+.form-floating > textarea.input-field ~ .floating-label {
+  padding-top: 0.75rem;
+}
+
+.form-floating > textarea.input-field:focus ~ .floating-label,
+.form-floating > textarea.input-field:not(:placeholder-shown) ~ .floating-label {
+  transform: scale(0.85) translateY(-0.65rem) translateX(0.15rem);
+}
+
+.required-field {
+  color: #dc3545;
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+.required-fields-note {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.dropzone-area {
+  border: 2px dashed #adb5bd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: #6c757d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+}
+
+.dropzone-area:hover {
+  border-color: #007bff;
+  background-color: #e9f5ff;
+}
+
+.dropzone-area.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.dropzone-area p {
+  margin: 0;
+  font-size: 15px;
+  color: #495057;
+  transition: all 0.3s ease;
+}
+
+.dropzone-area:hover p {
+  color: #007bff;
+  transform: scale(1.05);
+}
+
+/* Button Styles */
+.submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 150px;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: #8BC34A !important;
+  border-color: #8BC34A !important;
+  color: white !important;
+}
+
+.submit-btn:hover,
+.submit-btn:focus,
+.submit-btn:active {
+  background-color: #3E9355 !important;
+  border-color: #3E9355 !important;
+  box-shadow: 0 4px 8px rgba(62, 147, 85, 0.2);
+  transform: translateY(-1px);
+}
+
+.submit-btn:disabled {
+  background-color: #cccccc !important;
+  border-color: #cccccc !important;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Add a container for the submit button */
+.submit-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  clear: both;
+}
+
+.alert {
+  margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.loading-spinner {
+  width: 4rem;
+  height: 4rem;
+  border-width: 0.25rem;
+}
+
+.loading-text {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #0056b3;
+  font-weight: 500;
+}

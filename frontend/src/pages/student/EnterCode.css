@@ -1,0 +1,129 @@
+/* Base styles (desktop-first) */
+.enter-code-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+}
+
+.enter-code-form-wrapper {
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.enter-code-title {
+  margin-bottom: 20px;
+  color: #95C436;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.enter-code-subtitle {
+  font-size: 16px;
+  color: #212529;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.enter-code-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.enter-email-input,
+.enter-code-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #CBDCEB;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+  font-size: 18px;
+}
+
+.enter-code-input:focus,
+.enter-email-input:focus {
+  border-color: #95C436;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+  outline: none;
+}
+
+.enter-code-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #8BC34A;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.enter-code-button:hover {
+  background-color: #0056b3;
+}
+
+/* Small devices (phones <576px) */
+@media (max-width: 575.98px) {
+  .enter-code-title {
+    font-size: 22px;
+  }
+
+  .enter-code-subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .enter-email-input,
+  .enter-code-input {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .enter-code-button {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .enter-code-form-wrapper {
+    padding: 20px;
+  }
+}
+
+/* Medium devices (tablets 576px–767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .enter-code-title {
+    font-size: 24px;
+  }
+
+  .enter-code-subtitle {
+    font-size: 15px;
+  }
+
+  .enter-code-form-wrapper {
+    padding: 25px;
+  }
+}
+
+/* Large devices (768px–991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .enter-code-title {
+    font-size: 26px;
+  }
+}
+
+

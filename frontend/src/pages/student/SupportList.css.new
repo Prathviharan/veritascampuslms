@@ -1,0 +1,104 @@
+.support-card-img {
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.support-card-img:hover {
+  transform: scale(1.05);
+}
+
+/* Text styling */
+.text-truncate-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 4.5em;
+}
+
+/* Card footer styling */
+.card-footer {
+  background-color: rgba(245, 247, 250, 0.7);
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Modal Styling */
+.modal-content {
+  border-radius: 15px;
+  border: none;
+  overflow: hidden;
+}
+
+.modal-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #edf0f2;
+}
+
+.modal-footer {
+  border-top: 1px solid #edf0f2;
+}
+
+/* Empty state styling */
+.display-1.text-muted {
+  color: #d1d1d1 !important;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+/* Status Badge Styling */
+.status-badge {
+  font-size: 0.75rem;
+  padding: 0.35em 0.65em;
+  border-radius: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Admin Reply Styling */
+.admin-reply {
+  background-color: #f0f7ff;
+  border-left: 3px solid #8BC34A;
+  border-radius: 0 8px 8px 0;
+  margin-top: 1rem;
+  padding: 0.75rem;
+}
+
+.admin-reply-modal {
+  background-color: #f0f7ff;
+  border-left: 5px solid #8BC34A;
+  border-radius: 0 10px 10px 0;
+}
+
+.reply-text {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Filter Buttons Styling */
+.filter-buttons {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 1rem 0.5rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .d-flex.justify-content-between.align-items-center {
+    flex-direction: column;
+  }
+}
