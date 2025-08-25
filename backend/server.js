@@ -40,14 +40,14 @@ const app = express();
 // ------------------ Middleware ------------------
 app.use(express.json());
 
-const allowedOrgins = [
+const allowedOrigins = [
   "https://veritascampuslms-production.up.railway.app/"
 ];
 
 app.use(cors({
   origin: allowedOrigins,
   methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
+  credentials: true,
 }));
 
 app.use(fileUpload());
@@ -105,4 +105,5 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });
+
 
