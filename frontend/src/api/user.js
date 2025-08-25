@@ -1,16 +1,16 @@
 // src/api/user.js
 import axios from "axios";
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000"; // fallback for local dev
+const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000/api"; // fallback for local dev
 
 export const getCurrentUser = async () => {
   const token = localStorage.getItem("token");
   const role = localStorage.getItem("userRole");
 
   const endpointMap = {
-    student: "/api/me",
-    instructor: "/api/instructors/me", // placeholder for future
-    admin: "/api/admins/me",          // placeholder for future
+    student: "/me",
+    instructor: "/instructors/me",
+    admin: "/admins/me",
   };
 
   if (!role || !endpointMap[role]) {
