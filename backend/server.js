@@ -41,14 +41,23 @@ const app = express();
 app.use(express.json());
 
 const allowedOrigins = [
-  "https://veritascampuslms-production.up.railway.app/"
+  "http://localhost:3000", // local frontend dev
+  "https://veritascampuslms.vercel.app" // deployed frontend
 ];
 
 app.use(cors({
-  origin: allowedOrigins,
+  origin: function(origin, callback) {
+    if (!origin) return callback(null, true); // allow non-browser tools like Postman
+    if (allowedOrigins.indexOf(origin) === -1) {
+      const msg = "The CORS policy for this site does not allow access from the specified Origin.";
+      return callback(new Error(msg), false);
+    }
+    return callback(null, true);
+  },
   methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true,
+  credentials: true
 }));
+
 
 app.use(fileUpload());
 app.use(express.urlencoded({ extended: true }));
@@ -105,5 +114,6 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });
+
 
 
