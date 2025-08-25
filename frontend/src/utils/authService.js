@@ -1,7 +1,9 @@
 import axios from 'axios';
 
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api/auth';
+
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api/auth',
+  baseURL: API_URL,
 });
 
 // Request interceptor for adding the bearer token
